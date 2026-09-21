@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparador Interativo de Banners | Design & Qualidade</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo"><span class="logo-accent">Design</span>&amp;Qualidade</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="qualidade-ia.html">IA &amp; Limitações</a></li>
+                <li><a href="impacto-produto.html">Impacto no Design</a></li>
+                <li><a href="solucoes.html">O Papel Humano</a></li>
+                <li><a href="comparador.html" class="active">Comparador 360°</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="page-header">
+            <span class="badge">Ferramenta Interativa</span>
+            <h1 class="page-title">Comparador de Banner: Direto da IA vs Profissional Tratado</h1>
+            <p class="subtitle">Arraste o slider para comparar um banner gerado sem revisão humana contra um banner finalizado por um designer com foto de produto de alta qualidade.</p>
+        </div>
+
+        <div class="comparison-container">
+            <div class="img-wrapper before-img">
+                <div class="label">Banner 100% IA (Sem Tratamento)</div>
+                <div class="demo-image ia-raw">
+                    <div class="banner-mockup mockup-ia">
+                        <span class="mockup-tag error">Texto com letras distorcidas</span>
+                        <div class="product-placeholder bad">Foto do produto desfocada</div>
+                        <span class="mockup-tag error">Sombra irreal / Fundo estourado</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="img-wrapper after-img" id="afterImage">
+                <div class="label">Banner Tratado por Designer</div>
+                <div class="demo-image human-fixed">
+                    <div class="banner-mockup mockup-human">
+                        <span class="mockup-tag success">Tipografia cristalina e legível</span>
+                        <div class="product-placeholder good">Produto recortado em HD</div>
+                        <span class="mockup-tag success">Fidelidade de cor + Iluminação 3D</span>
+                    </div>
+                </div>
+            </div>
+            <input type="range" min="0" max="100" value="50" class="slider" id="slider">
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Design &amp; Qualidade Visual.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
